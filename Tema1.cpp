@@ -1,10 +1,10 @@
-#include "lab_m1/lab3/lab3.h"
+#include "lab_m1/Tema1/Tema1.h"
 
 #include <vector>
 #include <iostream>
 
-#include "lab_m1/lab3/transform2D.h"
-#include "lab_m1/lab3/object2D.h"
+#include "lab_m1/Tema1/transform2D.h"
+#include "lab_m1/Tema1/object2D.h"
 #include "components/simple_scene.h"
 
 #include <cstdlib> // for rand()
@@ -13,17 +13,17 @@ using namespace std;
 using namespace m1;
 
 
-Lab3::Lab3()
+Tema1::Tema1()
 {
 }
 
 
-Lab3::~Lab3()
+Tema1::~Tema1()
 {
 }
 
 
-void Lab3::Init()
+void Tema1::Init()
 {
     glm::ivec2 resolution = window->GetResolution();
     auto camera = GetSceneCamera();
@@ -32,7 +32,7 @@ void Lab3::Init()
     camera->SetRotation(glm::vec3(0, 0, 0));
     camera->Update();
     GetCameraInput()->SetActive(false);
-
+   
 
 
     // Some initializations
@@ -44,9 +44,9 @@ void Lab3::Init()
         hexagon[i].colorIndex = randomcolor + 1;
         hexagon[i].random_translateY = randomY[rand() % 3];
 
-        // cout << "hexagon " << i << " se spawneaza la " << hexagon[i].time_until_spawn << " seconds" << endl;
-        // cout << "hexagon " << i << " are culoarea " << hexagon[i].random_color << endl;
-        // cout << "hexagon " << i << " are Y " << hexagon[i].random_translateY << endl;
+       // cout << "hexagon " << i << " se spawneaza la " << hexagon[i].time_until_spawn << " seconds" << endl;
+       // cout << "hexagon " << i << " are culoarea " << hexagon[i].random_color << endl;
+       // cout << "hexagon " << i << " are Y " << hexagon[i].random_translateY << endl;
     }
 
     // Star appearance random
@@ -62,7 +62,7 @@ void Lab3::Init()
     cx = corner.x + 10;
     cy = corner.y + 10;
     float squareSide = 55;
-
+    
     // Creating the green squares
     for (int i = 1; i <= 9; i++) {
         std::string squareName = "square" + std::to_string(i);
@@ -171,7 +171,7 @@ void Lab3::Init()
     square_pistol[4].right = 710 + squareSide;
 
     // Creating the rectangle
-    Mesh* rectangle = object2D::CreateRectangle("rectangle", corner, 63, glm::vec3(1, 0, 0), true);
+    Mesh* rectangle = object2D::CreateRectangle("rectangle", corner, 63 , glm::vec3(1, 0, 0), true);
     AddMeshToList(rectangle);
 
     // Creating the pistols
@@ -200,19 +200,19 @@ void Lab3::Init()
 
     Mesh* pistol44 = object2D::CreatePistol("pistol44", corner, 20, 20, glm::vec3(1, 1, 0), true);
     AddMeshToList(pistol44);
-
+    
     Mesh* hexagon_blue = object2D::CreateHexagon("hexagon_blue", corner, 35, 22, glm::vec3(0, 0, 1), glm::vec3(0, 1, 0.5f));
     AddMeshToList(hexagon_blue);
 
     Mesh* hexagon_purple = object2D::CreateHexagon("hexagon_purple", corner, 35, 22, glm::vec3(0.6f, 0, 0.6f), glm::vec3(0, 1, 0.5f));
     AddMeshToList(hexagon_purple);
 
-    Mesh* hexagon_yellow = object2D::CreateHexagon("hexagon_yellow", corner, 35, 22, glm::vec3(1, 1, 0), glm::vec3(0, 1, 0.5f));
+    Mesh* hexagon_yellow= object2D::CreateHexagon("hexagon_yellow", corner, 35, 22, glm::vec3(1, 1, 0), glm::vec3(0, 1, 0.5f));
     AddMeshToList(hexagon_yellow);
 
     Mesh* hexagon_orange = object2D::CreateHexagon("hexagon_orange", corner, 35, 22, glm::vec3(1, 0.5f, 0), glm::vec3(0, 1, 0.5f));
     AddMeshToList(hexagon_orange);
-
+    
     for (int i = 1; i <= 8; i++) {
         std::string starName = "star" + std::to_string(i);
         Mesh* star = object2D::CreateStar(starName, corner, 5, glm::vec3(0.5f, 0.5f, 0.5f));
@@ -245,10 +245,10 @@ void Lab3::Init()
         AddMeshToList(projectileyellow);
     }
 
-}
+}   
 
 
-void Lab3::FrameStart()
+void Tema1::FrameStart()
 {
     // Clears the color buffer (using the previously set color) and depth buffer
     glClearColor(0.2f, 0.2f, 0.2f, 1.0f);
@@ -261,7 +261,7 @@ void Lab3::FrameStart()
 }
 
 
-void Lab3::Update(float deltaTimeSeconds)
+void Tema1::Update(float deltaTimeSeconds)
 {
 
 
@@ -364,7 +364,7 @@ void Lab3::Update(float deltaTimeSeconds)
 
     // Up to 5 hexagons
     for (int i = 1; i <= 5; i++) {
-
+        
         // Rendering the translation animation
         if (hexagon[i].spawned == false && hexagon[i].time_until_spawn <= 0.1f) {
             if (hexagon[i].shouldDie == 0) {
@@ -392,8 +392,8 @@ void Lab3::Update(float deltaTimeSeconds)
                 }
                 //cout << hexagon[i].scaleX << " " << hexagon[i].scaleY << endl;
 
-                hexagon[i].scaleX += 0.2 * (deltaTimeSeconds * hexagon[i].sign2);
-                hexagon[i].scaleY += 0.2 * (deltaTimeSeconds * hexagon[i].sign2);
+                hexagon[i].scaleX +=  0.2 * (deltaTimeSeconds * hexagon[i].sign2);
+                hexagon[i].scaleY +=  0.2 * (deltaTimeSeconds * hexagon[i].sign2);
 
                 if (hexagon[i].scaleX <= 0.8 && hexagon[i].scaleY <= 0.8) {
                     hexagon[i].spawned = true;
@@ -415,7 +415,7 @@ void Lab3::Update(float deltaTimeSeconds)
                 }
             }
         }
-
+        
 
         // One enemy either dies or (enters in collision with a star)
         if (hexagon[i].translateX <= -1280) {
@@ -444,7 +444,7 @@ void Lab3::Update(float deltaTimeSeconds)
             hexagones_spawned++;
             hexagon[i].lives = 3;
         }
-
+        
     }
 
 
@@ -465,7 +465,7 @@ void Lab3::Update(float deltaTimeSeconds)
     modelMatrixPistol[4] = glm::mat3(1);
     modelMatrixPistol[4] *= transform2D::Translate(700, 650);
 
-
+    
 
     // Created these additional pistols to avoid the flickering of the pistol when it is dragged
     RenderMesh2D(meshes["pistol11"], shaders["VertexColor"], modelMatrixPistol[1]);
@@ -487,28 +487,28 @@ void Lab3::Update(float deltaTimeSeconds)
 
     // Choosing which pistol is following the mouse
     switch (pressed) {
-    case 1:
-        RenderMesh2D(meshes["pistol1"], shaders["VertexColor"], modelMatrixPistol[1]);
-        modelMatrixPistol[1] = glm::mat3(1);
-        modelMatrixPistol[1] *= transform2D::Translate(mouseXglobal, mouseYglobal);
-        break;
-    case 2:
-        RenderMesh2D(meshes["pistol2"], shaders["VertexColor"], modelMatrixPistol[2]);
-        modelMatrixPistol[2] = glm::mat3(1);
-        modelMatrixPistol[2] *= transform2D::Translate(mouseXglobal, mouseYglobal);
-        break;
-    case 3:
-        RenderMesh2D(meshes["pistol3"], shaders["VertexColor"], modelMatrixPistol[3]);
-        modelMatrixPistol[3] = glm::mat3(1);
-        modelMatrixPistol[3] *= transform2D::Translate(mouseXglobal, mouseYglobal);
-        break;
-    case 4:
-        RenderMesh2D(meshes["pistol4"], shaders["VertexColor"], modelMatrixPistol[4]);
-        modelMatrixPistol[4] = glm::mat3(1);
-        modelMatrixPistol[4] *= transform2D::Translate(mouseXglobal, mouseYglobal);
-        break;
-    default:
-        break;
+        case 1:
+            RenderMesh2D(meshes["pistol1"], shaders["VertexColor"], modelMatrixPistol[1]);
+            modelMatrixPistol[1] = glm::mat3(1);
+            modelMatrixPistol[1] *= transform2D::Translate(mouseXglobal, mouseYglobal);
+            break;
+        case 2:
+            RenderMesh2D(meshes["pistol2"], shaders["VertexColor"], modelMatrixPistol[2]);
+            modelMatrixPistol[2] = glm::mat3(1);
+            modelMatrixPistol[2] *= transform2D::Translate(mouseXglobal, mouseYglobal);
+            break;
+        case 3:
+            RenderMesh2D(meshes["pistol3"], shaders["VertexColor"], modelMatrixPistol[3]);
+            modelMatrixPistol[3] = glm::mat3(1);
+            modelMatrixPistol[3] *= transform2D::Translate(mouseXglobal, mouseYglobal);
+            break;
+        case 4:
+            RenderMesh2D(meshes["pistol4"], shaders["VertexColor"], modelMatrixPistol[4]);
+            modelMatrixPistol[4] = glm::mat3(1);
+            modelMatrixPistol[4] *= transform2D::Translate(mouseXglobal, mouseYglobal);
+            break;
+        default:
+            break;
     }
 
 
@@ -533,7 +533,7 @@ void Lab3::Update(float deltaTimeSeconds)
                 if (square[i].scaleX >= 1.0 && square[i].scaleY >= 1.0) {
                     square[i].sign2 = -1;
                 }
-
+               
                 square[i].scaleX += (deltaTimeSeconds * square[i].sign2);
                 square[i].scaleY += (deltaTimeSeconds * square[i].sign2);
 
@@ -551,12 +551,12 @@ void Lab3::Update(float deltaTimeSeconds)
     }
 
 
-
+    
     // Collision between the hexagons and the projectiles
     for (int j = 0; j <= 9; j++) {
         for (int i = 1; i <= 5; i++) {
             if (projectile[j][1].spawn && glm::distance(glm::vec2(1280 + hexagon[i].translateX - 85, hexagon[i].random_translateY * 2), glm::vec2(glm::vec2(projectile[j][1].translateX + 181, square[1].translateY))) <= 2 && (hexagon[i].colorIndex == square[1].colorIndex)) { //SQUARE 1
-                // cout << "collision " << j << " 1 " << endl;
+               // cout << "collision " << j << " 1 " << endl;
                 if (hexagon[i].lives > 1) {
                     //projectile[j][1].spawn = 0;
                     projectile[j][1].hexagonCollisionIndex = i;
@@ -696,7 +696,7 @@ void Lab3::Update(float deltaTimeSeconds)
                     //cout << square[j].colorIndex << endl;
                     if (hexagon[i].translateX <= -1 && (projectile[i][j].translateY + square[j].translateY == hexagon[i].random_translateY * 2)) {
                         projectile[i][j].spawn = 1;
-
+                        
                         projectile_spawn_time[j] = 1.5f;
                         //cout << i << endl;
                     }
@@ -705,7 +705,7 @@ void Lab3::Update(float deltaTimeSeconds)
 
 
                 if (projectile[i][j].spawn == 1) {
-
+                   
                     modelMatrixProjectile[i] = glm::mat3(1);
                     modelMatrixProjectile[i] *= transform2D::Translate(projectile[i][j].translateX + 40 + square[j].translateX, projectile[i][j].translateY + square[j].translateY);
                     projectile[i][j].translateX += deltaTimeSeconds * 547.5;
@@ -737,7 +737,7 @@ void Lab3::Update(float deltaTimeSeconds)
     RenderMesh2D(meshes["square1"], shaders["VertexColor"], modelMatrixSquare);
     modelMatrixSquare = glm::mat3(1);
     modelMatrixSquare *= transform2D::Translate(150, 380);
-
+    
     RenderMesh2D(meshes["square2"], shaders["VertexColor"], modelMatrixSquare);
     modelMatrixSquare = glm::mat3(1);
     modelMatrixSquare *= transform2D::Translate(300, 380);
@@ -776,7 +776,7 @@ void Lab3::Update(float deltaTimeSeconds)
     modelMatrixRectangle = glm::mat3(1);
     modelMatrixRectangle *= transform2D::Translate(10, 25);
 
-
+   
     // Rendering the top pistol squares
     RenderMesh2D(meshes["pistol_square1"], shaders["VertexColor"], modelMatrixPistolSquare);
     modelMatrixPistolSquare = glm::mat3(1);
@@ -810,23 +810,23 @@ void Lab3::Update(float deltaTimeSeconds)
         modelMatrixRedSquare *= transform2D::Translate(1180, 650);
     }
     else if (no_lives == 2) {
-        RenderMesh2D(meshes["red_square1"], shaders["VertexColor"], modelMatrixRedSquare);
-        modelMatrixRedSquare = glm::mat3(1);
-        modelMatrixRedSquare *= transform2D::Translate(920, 650);
+		RenderMesh2D(meshes["red_square1"], shaders["VertexColor"], modelMatrixRedSquare);
+		modelMatrixRedSquare = glm::mat3(1);
+		modelMatrixRedSquare *= transform2D::Translate(920, 650);
 
-        RenderMesh2D(meshes["red_square2"], shaders["VertexColor"], modelMatrixRedSquare);
-        modelMatrixRedSquare = glm::mat3(1);
-        modelMatrixRedSquare *= transform2D::Translate(1050, 650);
-    }
+		RenderMesh2D(meshes["red_square2"], shaders["VertexColor"], modelMatrixRedSquare);
+		modelMatrixRedSquare = glm::mat3(1);
+		modelMatrixRedSquare *= transform2D::Translate(1050, 650);
+	}
     else if (no_lives == 1) {
-        RenderMesh2D(meshes["red_square1"], shaders["VertexColor"], modelMatrixRedSquare);
-        modelMatrixRedSquare = glm::mat3(1);
-        modelMatrixRedSquare *= transform2D::Translate(920, 650);
-    }
+		RenderMesh2D(meshes["red_square1"], shaders["VertexColor"], modelMatrixRedSquare);
+		modelMatrixRedSquare = glm::mat3(1);
+		modelMatrixRedSquare *= transform2D::Translate(920, 650);
+	}
     else if (no_lives == 0) {
-        cout << "GAME OVER" << endl;
-        exit(0);
-    }
+		cout << "GAME OVER" << endl;
+		exit(0);
+	}
 
     //Rendering the stars
     RenderMesh2D(meshes["star1"], shaders["VertexColor"], modelMatrixStar);
@@ -864,31 +864,31 @@ void Lab3::Update(float deltaTimeSeconds)
 }
 
 
-void Lab3::FrameEnd()
+void Tema1::FrameEnd()
 {
 }
 
 
-void Lab3::OnInputUpdate(float deltaTime, int mods)
+void Tema1::OnInputUpdate(float deltaTime, int mods)
 {
     // TODO(student): Move the logic window with W, A, S, D (up, left, down, right)
 
 }
 
 
-void Lab3::OnKeyPress(int key, int mods)
+void Tema1::OnKeyPress(int key, int mods)
 {
     // Add key press event
 }
 
 
-void Lab3::OnKeyRelease(int key, int mods)
+void Tema1::OnKeyRelease(int key, int mods)
 {
     // Add key release event
 }
 
 
-void Lab3::OnMouseMove(int mouseX, int cmouseY, int deltaX, int deltaY)
+void Tema1::OnMouseMove(int mouseX, int cmouseY, int deltaX, int deltaY)
 {
     // Add mouse move event
     int mouseY = 720 - cmouseY;
@@ -901,7 +901,7 @@ void Lab3::OnMouseMove(int mouseX, int cmouseY, int deltaX, int deltaY)
 }
 
 
-void Lab3::OnMouseBtnPress(int mouseX, int cmouseY, int button, int mods)
+void Tema1::OnMouseBtnPress(int mouseX, int cmouseY, int button, int mods)
 {
     // Fixing Y coordinates
     int mouseY = 720 - cmouseY;
@@ -944,7 +944,7 @@ void Lab3::OnMouseBtnPress(int mouseX, int cmouseY, int button, int mods)
 }
 
 
-void Lab3::OnMouseBtnRelease(int mouseX, int mouseY, int button, int mods)
+void Tema1::OnMouseBtnRelease(int mouseX, int mouseY, int button, int mods)
 {
 
     // If a pistol is released on a square, then square[i].waiting value takes the number of
@@ -968,12 +968,12 @@ void Lab3::OnMouseBtnRelease(int mouseX, int mouseY, int button, int mods)
                                 starPoints.starsCollected -= starPoints.pistol4;
                             else pressed = 0;
 
-
+                
                 square[i].waiting = pressed;
                 square[i].occupied = pressed;
                 square[i].color = square[i].aux[pressed];
                 square[i].colorIndex = pressed;
-
+                
             }
         }
         pressed = 0;
@@ -985,15 +985,15 @@ void Lab3::OnMouseBtnRelease(int mouseX, int mouseY, int button, int mods)
         }
     }
 
-
+    
 }
 
 
-void Lab3::OnMouseScroll(int mouseX, int mouseY, int offsetX, int offsetY)
+void Tema1::OnMouseScroll(int mouseX, int mouseY, int offsetX, int offsetY)
 {
 }
 
 
-void Lab3::OnWindowResize(int width, int height)
+void Tema1::OnWindowResize(int width, int height)
 {
 }
