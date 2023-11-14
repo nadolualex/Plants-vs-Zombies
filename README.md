@@ -1,3 +1,5 @@
+![Game Demo](Untitled video - Made with Clipchamp.gif)
+
 # Diamond vs Hexagones - OpenGL Game
 
 Welcome to the Diamond vs Hexagones game, a twist on the classic Plants vs Zombies implemented using OpenGL! In this game, diamonds defend against hexagones using stars as projectiles. The game features three squares representing lives, collision detection between hexagons, diamonds, and projectiles, as well as various interactive functionalities.
