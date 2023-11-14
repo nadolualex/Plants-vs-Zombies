@@ -1,4 +1,4 @@
-![game](https://github.com/nadolualex/Plants-vs-Zombies/assets/94294557/5d916fd6-957b-4f20-94cc-d20a43739cba)
+![Game Demo](https://github.com/nadolualex/Plants-vs-Zombies/assets/94294557/5d916fd6-957b-4f20-94cc-d20a43739cba)
 
 # Diamond vs Hexagones - OpenGL Game
 
