@@ -1,8 +1,8 @@
 ![Game Demo](https://github.com/nadolualex/Plants-vs-Zombies/assets/94294557/5d916fd6-957b-4f20-94cc-d20a43739cba)
 
-# Diamond vs Hexagones - OpenGL Game
+# Diamond vs Hexagons - OpenGL Game
 
-Welcome to the Diamond vs Hexagones game, a twist on the classic Plants vs Zombies implemented using OpenGL! In this game, diamonds defend against hexagones using stars as projectiles. The game features three squares representing lives, collision detection between hexagons, diamonds, and projectiles, as well as various interactive functionalities.
+Welcome to the Diamond vs Hexagons game, a twist on the classic Plants vs Zombies implemented using OpenGL! In this game, diamonds defend against hexagones using stars as projectiles. The game features three squares representing lives, collision detection between hexagons, diamonds, and projectiles, as well as various interactive functionalities.
 
 ## Features
 
