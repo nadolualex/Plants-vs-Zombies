@@ -1,4 +1,4 @@
-![Game Demo](Untitled video - Made with Clipchamp.gif)
+![Game Demo](Untitled_video_Made_with_Clipchamp.gif)
 
 # Diamond vs Hexagones - OpenGL Game
 
