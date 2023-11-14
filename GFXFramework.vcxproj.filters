@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\components\camera_input.cpp">
+      <Filter>src\components</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\components\scene_input.cpp">
+      <Filter>src\components</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\components\simple_scene.cpp">
+      <Filter>src\components</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\components\text_renderer.cpp">
+      <Filter>src\components</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\core\engine.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\core\gpu\frame_buffer.cpp">
+      <Filter>src\core\gpu</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\core\gpu\gpu_buffers.cpp">
+      <Filter>src\core\gpu</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\core\gpu\mesh.cpp">
+      <Filter>src\core\gpu</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\core\gpu\shader.cpp">
+      <Filter>src\core\gpu</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\core\gpu\texture2D.cpp">
+      <Filter>src\core\gpu</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\core\managers\texture_manager.cpp">
+      <Filter>src\core\managers</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\core\window\input_controller.cpp">
+      <Filter>src\core\window</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\core\window\window_callbacks.cpp">
+      <Filter>src\core\window</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\core\window\window_object.cpp">
+      <Filter>src\core\window</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\core\world.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\lab_m1\lab1\lab1.cpp">
+      <Filter>src\lab_m1\lab1</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\lab_m1\lab2\lab2.cpp">
+      <Filter>src\lab_m1\lab2</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\lab_m1\lab4\lab4.cpp">
+      <Filter>src\lab_m1\lab4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\lab_m1\lab5\lab5.cpp">
+      <Filter>src\lab_m1\lab5</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\lab_m1\lab6\lab6.cpp">
+      <Filter>src\lab_m1\lab6</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\lab_m1\lab7\lab7.cpp">
+      <Filter>src\lab_m1\lab7</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\lab_m1\lab8\lab8.cpp">
+      <Filter>src\lab_m1\lab8</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\lab_m1\lab9\lab9.cpp">
+      <Filter>src\lab_m1\lab9</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\utils\gl_utils.cpp">
+      <Filter>src\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\utils\text_utils.cpp">
+      <Filter>src\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\lab_m1\lab3\Tema1.cpp">
+      <Filter>src\lab_m1\Tema1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\lab_m1\lab3\object2D.cpp">
+      <Filter>src\lab_m1\Tema1</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\components\camera.h">
+      <Filter>src\components</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\components\camera_input.h">
+      <Filter>src\components</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\components\exports.h">
+      <Filter>src\components</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\components\scene_input.h">
+      <Filter>src\components</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\components\simple_scene.h">
+      <Filter>src\components</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\components\text_renderer.h">
+      <Filter>src\components</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\components\transform.h">
+      <Filter>src\components</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\core\engine.h">
+      <Filter>src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\core\gpu\frame_buffer.h">
+      <Filter>src\core\gpu</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\core\gpu\gpu_buffers.h">
+      <Filter>src\core\gpu</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\core\gpu\mesh.h">
+      <Filter>src\core\gpu</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\core\gpu\particle_effect.h">
+      <Filter>src\core\gpu</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\core\gpu\shader.h">
+      <Filter>src\core\gpu</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\core\gpu\ssbo.h">
+      <Filter>src\core\gpu</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\core\gpu\texture2D.h">
+      <Filter>src\core\gpu</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\core\gpu\vertex_format.h">
+      <Filter>src\core\gpu</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\core\managers\resource_path.h">
+      <Filter>src\core\managers</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\core\managers\texture_manager.h">
+      <Filter>src\core\managers</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\core\window\input_controller.h">
+      <Filter>src\core\window</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\core\window\window_callbacks.h">
+      <Filter>src\core\window</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\core\window\window_object.h">
+      <Filter>src\core\window</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\core\world.h">
+      <Filter>src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\lab_m1\lab1\lab1.h">
+      <Filter>src\lab_m1\lab1</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\lab_m1\lab2\lab2.h">
+      <Filter>src\lab_m1\lab2</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\lab_m1\lab4\lab4.h">
+      <Filter>src\lab_m1\lab4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\lab_m1\lab4\transform3D.h">
+      <Filter>src\lab_m1\lab4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\lab_m1\lab5\lab5.h">
+      <Filter>src\lab_m1\lab5</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\lab_m1\lab5\lab_camera.h">
+      <Filter>src\lab_m1\lab5</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\lab_m1\lab6\lab6.h">
+      <Filter>src\lab_m1\lab6</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\lab_m1\lab6\shaders\FragmentShader.glsl">
+      <Filter>src\lab_m1\lab6\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\lab_m1\lab6\shaders\VertexShader.glsl">
+      <Filter>src\lab_m1\lab6\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\lab_m1\lab7\lab7.h">
+      <Filter>src\lab_m1\lab7</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\lab_m1\lab7\shaders\FragmentShader.glsl">
+      <Filter>src\lab_m1\lab7\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\lab_m1\lab7\shaders\VertexShader.glsl">
+      <Filter>src\lab_m1\lab7\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\lab_m1\lab8\lab8.h">
+      <Filter>src\lab_m1\lab8</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\lab_m1\lab8\shaders\FragmentShader.glsl">
+      <Filter>src\lab_m1\lab8\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\lab_m1\lab8\shaders\VertexShader.glsl">
+      <Filter>src\lab_m1\lab8\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\lab_m1\lab9\lab9.h">
+      <Filter>src\lab_m1\lab9</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\lab_m1\lab9\shaders\FragmentShader.glsl">
+      <Filter>src\lab_m1\lab9\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\lab_m1\lab9\shaders\VertexShader.glsl">
+      <Filter>src\lab_m1\lab9\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\lab_m1\lab_list.h">
+      <Filter>src\lab_m1</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\utils\gl_utils.h">
+      <Filter>src\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\utils\glm_utils.h">
+      <Filter>src\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\utils\math_utils.h">
+      <Filter>src\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\utils\memory_utils.h">
+      <Filter>src\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\utils\text_utils.h">
+      <Filter>src\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\src\utils\window_utils.h">
+      <Filter>src\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lab_m1\lab3\Tema1.h">
+      <Filter>src\lab_m1\Tema1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lab_m1\lab3\object2D.h">
+      <Filter>src\lab_m1\Tema1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lab_m1\lab3\transform2D.h">
+      <Filter>src\lab_m1\Tema1</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Alex\Desktop\EGC\gfx-framework-master\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{488CBBDC-F92F-3BA7-8484-1874E565D6AB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\components">
+      <UniqueIdentifier>{88B96129-32C8-3657-8A8D-D3D405F378C8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core">
+      <UniqueIdentifier>{D71BD3F5-64DD-3DAD-A004-F79DBDDEAFE2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\gpu">
+      <UniqueIdentifier>{B91245F7-DC05-36FD-A5DB-2211729C0AB6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\managers">
+      <UniqueIdentifier>{C907BBC6-48B0-38BD-89FE-6985E7B19661}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\window">
+      <UniqueIdentifier>{83F41C23-D701-3A0E-8336-E0CFF1B3F822}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lab_m1">
+      <UniqueIdentifier>{A030F30F-0270-3399-BD12-4402E4601B72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lab_m1\lab1">
+      <UniqueIdentifier>{797C9324-45B9-3BE5-A2F4-26718BE7BE9D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lab_m1\lab2">
+      <UniqueIdentifier>{280E912C-7D97-3511-B4AD-65479CFAB0CD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lab_m1\lab4">
+      <UniqueIdentifier>{5CBF276F-B06A-3A4E-ACFA-41A142596D10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lab_m1\lab5">
+      <UniqueIdentifier>{88BCA85F-F4B1-323F-A110-06C94F66C800}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lab_m1\lab6">
+      <UniqueIdentifier>{586E3C21-9D85-33AB-84F4-BE1AEC21E21B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lab_m1\lab6\shaders">
+      <UniqueIdentifier>{74687A5F-A182-3C8B-87F2-0CAA8CC56B4D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lab_m1\lab7">
+      <UniqueIdentifier>{07CEA0AD-9678-3985-AE5C-4FC0AF384A54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lab_m1\lab7\shaders">
+      <UniqueIdentifier>{D69D6569-1F82-3B49-A4A1-1A337A731F35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lab_m1\lab8">
+      <UniqueIdentifier>{3A11C259-8E06-35B0-8C01-C331D2DC578B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lab_m1\lab8\shaders">
+      <UniqueIdentifier>{03EB02DB-23A2-324F-A919-B4908D3CB71F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lab_m1\lab9">
+      <UniqueIdentifier>{11441A03-038C-3C3E-B6A4-B4CCDE102FB9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lab_m1\lab9\shaders">
+      <UniqueIdentifier>{2B8453B1-27B3-36F7-A298-B2FC7D7A205C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\utils">
+      <UniqueIdentifier>{23C05AD2-29BD-313C-9A9E-2E2A04CFAF5D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lab_m1\Tema1">
+      <UniqueIdentifier>{bde826e5-8e2a-48ef-8369-82cba3a922d6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
