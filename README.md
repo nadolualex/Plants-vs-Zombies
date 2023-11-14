@@ -8,7 +8,7 @@ Welcome to the Diamond vs Hexagones game, a twist on the classic Plants vs Zombi
 
 ### 1. Game Elements
 - Diamonds and hexagons: Representing defenders and attackers, respectively.
-- Stars: Projectiles launched by diamonds to fend off hexagons.
+- Stars: Projectiles launched by diamonds to fend off hexagons. **(Note: Stars only shoot when a hexagon of the same color spawns on the line.)**
 - Squares: Displaying the remaining lives of the player.
 
 ### 2. Drag and Drop Functionality
