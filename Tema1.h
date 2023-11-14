@@ -5,11 +5,11 @@
 
 namespace m1
 {
-    class Lab3 : public gfxc::SimpleScene
+    class Tema1 : public gfxc::SimpleScene
     {
     public:
-        Lab3();
-        ~Lab3();
+        Tema1();
+        ~Tema1();
 
         void Init() override;
 
@@ -59,7 +59,7 @@ namespace m1
         int mouseYglobal;
 
         // For randomizing
-        int randomY[3] = { 40, 115, 190 };
+        int randomY[3] =  { 40, 115, 190 };
         std::string randomHexagon[4] = { "hexagon_purple", "hexagon_orange", "hexagon_blue", "hexagon_yellow" };
 
         // Initializations for randomizing hexagones spawning
@@ -79,7 +79,7 @@ namespace m1
             int right;
 
             // Coordinates of the pistol in the square
-            int translateX;
+            int translateX; 
             int translateY;
 
             int waiting = 0; // Waiting for a pistol to be drawn
@@ -91,7 +91,7 @@ namespace m1
 
             int sign2 = 1;
 
-            std::string aux[10] = { "nothing", "projectilepurple", "projectileorange", "projectileblue", "projectileyellow" };
+            std::string aux[10] = {"nothing", "projectilepurple", "projectileorange", "projectileblue", "projectileyellow"};
             std::string color;
 
             int colorIndex = 0;
@@ -154,7 +154,7 @@ namespace m1
             int pistol4 = 3;
         };
 
-
+        
         int projectiles_spawned = 0;
         float projectile_spawn_time[20] = { 3.0f };
 
@@ -173,20 +173,20 @@ namespace m1
             int row = 0;
         };
 
-        Projectile projectile[30][30];
+       Projectile projectile[30][30];
 
-        StarPoints starPoints;
+       StarPoints starPoints;
 
-        float pinkStarSpawnTime = 1.5f;
+       float pinkStarSpawnTime = 1.5f;
 
-        Hexagon hexagon[10];
+       Hexagon hexagon[10];
 
-        SquarePistol square_pistol[5];
+       SquarePistol square_pistol[5];
 
-        Square square[10];
+       Square square[10];
 
-        PinkStar pinkstar;
+       PinkStar pinkstar;
 
-
+        
     };
 }   // namespace m1
