@@ -25,32 +25,4 @@ Welcome to the Diamond vs Hexagons game, a twist on the classic Plants vs Zombie
 ### 5. Animation
 - **Rotation, Translation, and Scaling:** Enjoy smooth animations as diamonds undergo dynamic transformations for a visually engaging experience.
 
-## How to Play
-
-1. **Compile and Run:**
-   - Ensure you have an OpenGL development environment set up.
-   - Compile and run the game using your preferred development environment or build tools.
-
-2. **Game Mechanics:**
-   - Drag diamonds onto squares to position them strategically.
-   - Right-click on a diamond to remove it from the game.
-   - Defend against hexagons by launching stars.
-   - Manage points wisely, as dragging diamonds incurs a cost.
-
-3. **Animations:**
-   - Experience dynamic animations during diamond transformations.
-   - Enjoy a visually engaging gaming experience with smooth rotation, translation, and scaling effects.
-
-## Dependencies
-
-- OpenGL: Ensure you have the necessary OpenGL libraries and dependencies installed.
-
-## Build and Run
-
-1. Clone the repository
-
-2. Build the project using your preferred build tools.
-
-3. Run the application.
-
-Enjoy playing Diamond vs Hexagones!
+### Note: Despite downloading the source code, the game may not be fully playable due to additional dependencies or setup requirements beyond simple compilation and execution. Please ensure you carefully follow the instructions below to set up the environment and any necessary dependencies for the game to run properly.
