@@ -25,4 +25,4 @@ Welcome to the Diamond vs Hexagons game, a twist on the classic Plants vs Zombie
 ### 5. Animation
 - **Rotation, Translation, and Scaling:** Enjoy smooth animations as diamonds undergo dynamic transformations for a visually engaging experience.
 
-### Note: Despite downloading the source code, the game may not be fully playable due to additional dependencies or setup requirements beyond simple compilation and execution. Please ensure you carefully follow the instructions below to set up the environment and any necessary dependencies for the game to run properly.
+### Note: Despite downloading the source code, the game may not be fully playable due to additional dependencies or setup requirements beyond simple compilation and execution.
